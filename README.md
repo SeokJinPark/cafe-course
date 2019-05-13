@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `cafe_schedule`.`t_course_time` (
 * API서버는 AWS에서 Loard Balancer와 AutoScaling Group을 이용해 고가용성을 높이고 서버를 사용량에 따라 유동적으로 Scale Up, Scale Out 됩니다
 
 ## Pseudo Code(의사 코드)
-* 재귀함수를 이용한 모든 경우의 수 싱행
+* 재귀함수를 이용한 모든 경우의 수 행
 * 경우의수 마지막 단계 입력 이후 호출하여 선택된 시간표에 중복값  & 제외 시킬 시간 비교
 * 중복값이나 제외시킬 시간이 없는 경우 결과값 입력
 
