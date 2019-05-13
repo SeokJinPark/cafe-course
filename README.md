@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `cafe_schedule`.`t_course_time` (
 
 ```
 #### 서비스 아키텍처
-이미지 넣을 예정
+![service_architecture](./readme_img/service_architecture.png)
 
 ## 대규모 서비스에 대한 대응
 * 데이터 조회이외에 모든 로직은 프론트에서 진행합니다(API처리 최소화)
