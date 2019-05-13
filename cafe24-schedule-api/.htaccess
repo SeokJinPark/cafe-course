@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteBase /
+
+    RewriteCond %{REQUEST_URI} ^/(less|fontawesome|images|stylesheets|js|font)/(.*)$
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    RewriteCond %{REQUEST_URI} !^/public/(.*)$
+    RewriteCond $1 !^(index\.php)
+
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
